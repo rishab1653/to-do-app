@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>todoapp</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="LightGray">
+
+	<div class="aaa">
+	<div class="one">
+	<h2 class="hclass"> Moviemania</h2>
+	<p>Movies for everyone</p>
+	<form> 
+		
+		<input type="text" name="Search Movies" placeholder="Search Movies">
+	</form>
+    </div >
+
+
+    <div class="two">
+    	<h1>Movies to Watch</h1>
+    	<ul id="list" type="none">
+    		<li>
+    			<span class="name">figh club</span>  
+		<button id="button"><span class="delete" onclick="f3()">delete</span>  </button>	   
+			  <div class="space"></div>
+    	    </li>
+    		<li>
+    			<span class="name">shashank</span>   
+				<button id="button"><span class="delete" onclick="f3()">delete</span>  </button>	   
+			  <div class="space"></div>
+    		</li>
+    		<li>
+    			<span class="name">Dilwale</span>   
+				<button id="button"><span class="delete" onclick="f3()">delete</span>  </button>	   
+			   <div class="space"></div>
+    		</li>
+    		<li>
+    			<span class="name">dark Knight</span> 
+				<button id="button"><span class="delete" onclick="f3()">delete</span>  </button>	   
+				<div class="space"></div>
+    		</li>
+    		<li>
+    			<span class="name">dark knight1</span> 
+				<button id="button"><span class="delete" onclick="f3()">delete</span>  </button>	   
+				<div class="space"></div>
+			</li>
+			<li class="rb">
+
+			</li>
+    	</ul>
+    </div>
+
+
+    <div class="three">
+    	
+    		<label>Hide the list</label>
+			<input type="checkbox" name="Add a movie" onclick="f4()" >
+			<div class="space"></div>
+    		<input type="text" name="Search Movies" placeholder="Add a movie" id="addvalue">
+    		<button onclick="f()">add</button>
+    	
+    </div>
+</div>
+<script>
+	function f()
+	{
+		var s=document.getElementById("addvalue").value;
+var para=document.createElement("li");
+var data=document.createTextNode(s);
+para.appendChild(data);
+var t=document.getElementById("list");
+t.appendChild(para);
+
+// var s1=document.getElementById("Addvalue");
+// var para1=document.createElement("span");
+// var data1=document.createTextNode("delete");
+// para1.appendChild(data1);
+// var t1=document.getElementById("list");
+// t1.appendChild(para1);
+	}
+
+	function f3() {
+  var list = document.getElementById("list");
+  list.removeChild(list.childNodes[0]);
+}
+
+
+function f4()
+{
+	var x=document.getElementById("list");
+
+	if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+  } else {
+    x.style.visibility = 'hidden';
+  }
+
+}
+</script>
+
+</body>
+</html>

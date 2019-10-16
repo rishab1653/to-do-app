@@ -1,0 +1,72 @@
+.one
+{
+width: 50%;
+
+}
+.delete{
+	float: right;
+
+
+}
+#button
+{
+	float: right;
+	background-color: black;
+}
+.name
+{
+	margin: 10px;
+}
+.one
+{
+	text-align: center;
+	border: 1px solid black;
+	width: 100%;
+	background-color: aqua;
+	
+}
+li
+{
+	border-bottom: 0.5px solid black;
+}
+h1
+{
+	text-align: center;
+}
+h2{
+	text-align: center;
+}
+.space
+{
+	height: 10px;
+	
+}
+.two
+{
+	background-color: bisque;
+}
+.rb
+{
+	border:none;
+}
+.three
+{
+	background-color: rgb(106, 218, 218);
+	height: 25px;
+	text-align: center;
+}
+
+
+
+
+.delete
+{
+	
+	color:white;
+}
+.aaa
+{
+border: 1px solid black;
+margin: 10%;
+box-shadow: 30px 30px black;
+}
